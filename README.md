@@ -1,4 +1,4 @@
-# py-crypto-api
+# py-crypto-api ![example workflow](https://github.com/nogiszd/py-crypto-api/actions/workflows/test.yml/badge.svg)
 Super simple Python API for fetching cryptocurrency exchange rate via Google Search.<br />
 Written with [FastAPI](https://fastapi.tiangolo.com/) and scraping via [BeautifulSoup4](https://www.crummy.com/software/BeautifulSoup/bs4/doc/).
 
