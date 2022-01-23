@@ -3,7 +3,7 @@ name: Test API
 on: [push]
 
 jobs:
-  test-windows:
+  test:
     runs-on: ubuntu-latest
     strategy:
       matrix:
