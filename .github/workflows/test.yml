@@ -1,13 +1,12 @@
-name: Test
+name: Test API
 
 on: [push]
 
 jobs:
-  test:
-    runs-on: ${{matrix.os}}
+  test-windows:
+    runs-on: ubuntu-latest
     strategy:
       matrix:
-        os: [windows-latest, ubuntu-latest]
         python-version: [3.9, '3.10']
     steps:
       - uses: actions/checkout@v2
