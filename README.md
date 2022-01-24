@@ -15,5 +15,5 @@ Testing and development was taken on Python 3.10.
 |--|--|--|
 |`localhost:8000/v1/{query}`  | Replace `{query}` with search phrase,<br />for e.g. "1 btc to usd" |Outputs JSON formatted response e.g. `{"amount":"9.9"}`<br />where `9.9` is amount of USD for 1 Bitcoin|
 
-*You can use Swagger UI to visualize everything via `localhost:8000/docs`*
+*You can use Swagger UI to visualize everything via* `localhost:8000/docs`
 
