@@ -56,9 +56,9 @@ def get_data(crypto: str, currency: str):
         if s.summary():
             fetched_data = s.summary()
         else:
-            raise HTTPException(status_code=400, detail=f"{symbol} query is empty")
+            raise HTTPException(status_code=400, detail="query is empty")
     except requests.TooManyRedirects:
-        raise HTTPException(status_code=404, detail=f"{symbol} doesn't exist or cannot be found")
+        raise HTTPException(status_code=404, detail=f"resource doesn't exist or cannot be found")
     except requests.HTTPError:
         raise HTTPException(status_code=500, detail="An error has occurred while processing the request.")
     
