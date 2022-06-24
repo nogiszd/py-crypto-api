@@ -13,7 +13,6 @@ class Scrape():
         match method:
             case 1:
                 res = requests.get("https://www.google.com/search?q=" + symbol.replace(" ", "+"), headers=headers, cookies=cookies_dict).text
-                print(res)
                
             case 2:
                 res = requests.get("https://www.google.com/search?q=" + symbol[0] + "+to+" + symbol[1], headers=headers, cookies=cookies_dict).text
