@@ -9,12 +9,10 @@ app = FastAPI()
 
 @app.on_event("startup")
 def startup():
-    f = open("structure.json")
-    data = f.read()
-    f.close()
+    structure = '{"elements": [{"from": "[class=\'BNeawe iBp4i AP7Wnd\']","to": "amount"}]}'
     
     global elements_to_scrape
-    elements_to_scrape = json.loads(data)
+    elements_to_scrape = json.loads(structure)
 
 @app.get("/")
 def root():
